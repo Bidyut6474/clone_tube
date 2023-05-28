@@ -1,6 +1,4 @@
-<?php
-echo md5("1234");
-?>
+
 <?php 
    session_start();
    if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>

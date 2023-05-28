@@ -15,7 +15,7 @@
       	<?php if ($_SESSION['role'] == 'admin') {?>
       		<!-- For Admin -->
       		<div class="card" style="width: 18rem;">
-			  <img src="images/admin-default.png" 
+			  <img src="assets/images/admin-default.png" 
 			       class="card-img-top" 
 			       alt="admin image">
 			  <div class="card-body text-center">
@@ -58,7 +58,7 @@
       	<?php }else { ?>
       		<!-- FORE USERS -->
       		<div class="card" style="width: 18rem;">
-			  <img src="images/user-deafault.png" 
+			  <img src="assets/images/user-deafault.png" 
 			       class="card-img-top" 
 			       alt="admin image">
 			  <div class="card-body text-center">
