@@ -6,13 +6,16 @@ class VideoProcessor {
     private $allowedTypes = array("mp4", "flv", "webm", "mkv", "vob", "ogv", "ogg", "avi", "wmv", "mov", "mpeg", "mpg");
     
  
-     private $ffmpegPath ; 
-     private $ffprobePath ; 
+     private $ffmpegPath; 
+
+    
+    private $ffprobePath; 
 
     public function __construct($con) {
         $this->con = $con;
-        $this->ffmpegPath = realpath("ffmpeg/windows/ffmpeg.exe");
-        $this->ffprobePath = realpath("ffmpeg/windows/ffprobe.exe");
+
+         $this->ffmpegPath = realpath("ffmpeg/windows/ffmpeg.exe");
+     $this->ffprobePath = realpath("ffmpeg/windows/ffprobe.exe");
     }
 
     public function upload($videoUploadData) {
