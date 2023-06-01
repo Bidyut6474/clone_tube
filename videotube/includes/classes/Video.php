@@ -77,7 +77,7 @@ class Video {
 
     public function getLikes() {
         $query = $this->con->prepare("SELECT count(*) as 'count' FROM likes WHERE videoId = :videoId");
-        $query->bindParam(":videoId", $videoId);
+        $query->bindParam(":videoId", $videoId); 
         $videoId = $this->getId();
         $query->execute();
 

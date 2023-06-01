@@ -15,7 +15,7 @@
     echo $videoGrid->create(null, "Recommended", false);
 
 
-    ?>
+    ?> 
 </div>
 
 
