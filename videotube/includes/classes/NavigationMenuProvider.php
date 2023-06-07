@@ -7,7 +7,7 @@ class NavigationMenuProvider {
         $this->con = $con;
         $this->userLoggedInObj = $userLoggedInObj;
     }
-
+ 
     public function create() {
         $menuHtml = $this->createNavItem("Home", "assets/images/home.png", "index.php");
         $menuHtml .= $this->createNavItem("Trending", "assets/images/trending.png", "trending.php");
@@ -16,7 +16,7 @@ class NavigationMenuProvider {
 
         if(User::isLoggedIn()) {
             $menuHtml .= $this->createNavItem("Settings", "assets/images/settings.png", "settings.php");
-            $menuHtml .= $this->createNavItem("Log Out", "assets/images/logout.png", "logout.php");
+            $menuHtml .= $this->createNavItem("Log Out", "assets/images/logout.png",  "logout.php");
 
             $menuHtml .= $this->createSubscriptionsSection();
         }

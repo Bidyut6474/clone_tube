@@ -15,7 +15,7 @@ class VideoProcessor {
     //private $ffprobePath = "ffmpeg/mac/xampp-VM/ffprobe"; // *** MAC (USING XAMPP VM) ***
     // private $ffprobePath = "ffmpeg/linux/ffprobe"; // *** LINUX ***
      private $ffprobePath; //  *** WINDOWS (UNCOMMENT CODE IN CONSTRUCTOR) ***
-
+ 
     public function __construct($con) {
         $this->con = $con;
 
@@ -111,7 +111,7 @@ class VideoProcessor {
 
         return $query->execute();
     }
-
+   
     public function convertVideoToMp4($tempFilePath, $finalFilePath) {
         $cmd = "$this->ffmpegPath -i $tempFilePath $finalFilePath 2>&1";
 

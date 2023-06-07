@@ -14,7 +14,7 @@
       style="min-height: 100vh">
       	<?php if ($_SESSION['role'] == 'admin') {?>
       		<!-- For Admin -->
-      		<div class="card" style="width: 18rem;">
+      	 	<div class="card" style="width: 18rem;">
 			  <img src="assets/images/admin-default.png" 
 			       class="card-img-top" 
 			       alt="admin image">

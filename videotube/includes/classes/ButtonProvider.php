@@ -13,7 +13,7 @@ class ButtonProvider {
 
         $action  = ButtonProvider::createLink($action);
 
-        return "<button class='$class' onclick='$action'>
+        return "<button class='$class' onclick='$action'> 
                     $image
                     <span class='text'>$text</span>
                 </button>";

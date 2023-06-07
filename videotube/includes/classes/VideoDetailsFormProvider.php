@@ -5,7 +5,7 @@ class VideoDetailsFormProvider {
 
     public function __construct($con) {
         $this->con = $con;
-    }
+    } 
 
     public function createUploadForm() {
         $fileInput = $this->createFileInput();

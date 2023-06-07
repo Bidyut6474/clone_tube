@@ -10,7 +10,7 @@ require_once("includes/classes/VideoDetailsFormProvider.php");
     $formProvider = new VideoDetailsFormProvider($con);
     echo $formProvider->createUploadForm();
     ?>
-
+ 
 
 </div>
 

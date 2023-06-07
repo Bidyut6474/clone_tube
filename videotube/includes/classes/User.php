@@ -4,7 +4,7 @@ class User {
     private $con, $sqlData;
 
     public function __construct($con, $username) {
-        $this->con = $con;
+        $this->con = $con; 
        
 
         $query = $this->con->prepare("SELECT * FROM users WHERE username = :un");
@@ -19,7 +19,7 @@ class User {
     }
     
     public function getUsername() {
-        return $this->sqlData["username"];
+        return User::isLoggedIn() ? $this->sqlData["username"] : "";
     }
 
     public function getName() {
